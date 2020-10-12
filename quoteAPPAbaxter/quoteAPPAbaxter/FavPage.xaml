@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="quoteAPPAbaxter.FavPage">
+    <ContentPage.Content>
+
+        <ScrollView x:Name="FavBackgroundColour">
+            <StackLayout>
+
+
+                <Label  x:Name="Q1" />
+                <Label  x:Name="A1" />
+                <Grid>
+                    <Button Text="BACK" Clicked= "btn_back_Clicked" HeightRequest="50" VerticalOptions="FillAndExpand"/>
+                </Grid>
+            </StackLayout>
+        </ScrollView>
+
+
+    </ContentPage.Content>
+</ContentPage>

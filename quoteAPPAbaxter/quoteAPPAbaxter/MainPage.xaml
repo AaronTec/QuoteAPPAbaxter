@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="quoteAPPAbaxter.MainPage">
+
+    <Grid x:Name="MainBackground">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50*"/>
+            <RowDefinition Height="10*"/>
+            <RowDefinition Height="100*"/>
+            <RowDefinition Height="200*"/>
+            <RowDefinition Height="70*"/>
+            <RowDefinition Height="70*"/>
+            <RowDefinition Height="70*"/>
+            <RowDefinition Height="150*"/>
+            <RowDefinition Height="70*"/>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <Label Text="QUOTES Keeper" Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="1" FontSize="Large" />
+
+        <Entry IsReadOnly="True" Text="" Grid.Column="0" Grid.ColumnSpan="3" Grid.Row="2" x:Name="Author" FontSize="Large" />
+        <Editor IsReadOnly="True" Text="" Grid.Column="0" Grid.ColumnSpan="3" Grid.Row="3" x:Name="Quote" FontSize="Medium" />
+
+        <Button Text="Random" Grid.Row="4" Grid.Column="0" Clicked= "Random"/>
+        <Button Text="STAR" Grid.Row="4" Grid.Column="1" x:Name="btn_fav" Clicked="btn_favs_Clicked"/>
+        <Button Text="Favouries!" Grid.Row="4" Grid.Column="2" x:Name="btn_favpage" Clicked="btn_favpage_Clicked"/>
+
+        <Button Text="Next" Grid.Row="5" Grid.Column="2" Clicked= "Next"/>
+        <Button Text="Previous" Grid.Row="5" Grid.Column="0" Clicked= "Previous"/>
+        <Button Text="Delete" Grid.Row="5" Grid.Column="1" x:Name="btn_dlt" Clicked= "Delete"/>
+        
+        <Entry Placeholder="Enter the Author" Grid.Column="0" Grid.Row="6" x:Name="Input_Author" Grid.ColumnSpan="3"/>
+
+        <Editor Placeholder="Enter the Quote" Grid.Column="0" Grid.Row="7" x:Name="Input_Quote" Grid.ColumnSpan="3"/>
+
+        <Button Text="ADD Quote" Grid.Row="8" Grid.Column="0" Clicked= "Add"/>
+
+    </Grid>
+
+</ContentPage>

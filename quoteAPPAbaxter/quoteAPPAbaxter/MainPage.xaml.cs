@@ -18,7 +18,7 @@ namespace quoteAPPAbaxter
     {
 
         int int_random = 0;
-        // hello there
+        
         string filename = "zavefiles.txt";
         string loadedContent = "";
         string unconvertedText = "";

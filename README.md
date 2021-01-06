@@ -1,7 +1,7 @@
 # QuoteAPPAbaxter
 We were given the task to create a mobile APP that.
 
-- Loaded and save quotes from a JSON file. Each quote should consist of the quote and the author
+- Load and save quotes from a JSON file. Each quote should consist of the quote and the author
 - Display a random quote when you tap a “Random Quote” button.
 - Have two text entry fields for adding a new quote.
 - Add a Boolean “favourite” property to your quote class. By default, it should be set to false.
